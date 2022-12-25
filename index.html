@@ -1,0 +1,309 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+	body {
+		margin: 0px;
+		font-family: sans-serif;
+		background: beige;
+	}
+
+	nav {
+		border: 4px solid black;
+		height: 40px;
+		background: white;
+	}
+
+	nav a h1 {
+		height: 100%;
+		display: inline-flex;
+		margin: 0;
+		padding: 0 20px;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		vertical-align: middle;
+		color: black;
+		background: white;
+		font-size: 20px;
+	}
+
+	nav a.primary h1 {
+		background: blue;
+		color: white;
+		border-right: 4px solid black;
+	}
+
+	nav a.primary h1:hover {
+		background: white;
+		color: black;
+	}
+
+	nav a h1:hover {
+		color: white;
+		background: black;
+	}
+
+	nav a {
+		text-decoration: none
+	}
+
+	a {
+		text-decoration: none
+	}
+
+	main {
+		height: 100%;
+		display: inline-flex;
+		margin: 0;
+		width: calc(100% - 120px);
+		padding: 0 60px;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	main.initial {
+		height: calc(100% - 48px);
+	}
+
+	main h2 {
+		font-size: 31.5px;
+		text-align: left;
+		font-family: "Poppins", sans-serif;
+	}
+
+	main a {
+		width: 100%;
+		padding: 5px;
+		display: inline;
+		margin-bottom: 10px;
+	}
+
+	a.button.primary {
+		background: blue;
+		border-radius: 15px;
+		border: none;
+		padding: 6px;
+		color: white;
+		border: 2px solid blue;
+		font-size: 15px;
+		font-weight: bold;
+		font-family: "Poppins", sans-serif;
+	}
+
+	a.button.secondary {
+		background: transparent;
+		border-radius: 15px;
+		border: none;
+		padding: 6px;
+		color: black;
+		border: 2px solid black;
+		font-size: 15px;
+		font-weight: bold;
+		font-family: "Poppins", sans-serif;
+	}
+
+	a.button.tertiary {
+		background: transparent;
+		border-radius: 15px;
+		border: none;
+		padding: 6px;
+		color: white;
+		border: 2px solid white;
+		font-size: 15px;
+		font-weight: bold;
+		font-family: "Poppins", sans-serif;
+	}
+
+	main.footer {
+		background: blue;
+		color: white;
+		display: inline-block;
+		height: auto;
+		padding-bottom: 20px;
+	}
+
+	ul,
+	li {
+		padding: 5px 0;
+	}
+
+	main.footer a {
+		font-weight: bold;
+		background: white;
+		color: blue;
+		padding: 3px;
+	}
+
+	main.second {
+		background: black;
+		color: white;
+		text-align: left;
+	}
+
+	main.third {
+		background: rgb(175, 207, 255);
+		color: black;
+		text-align: left;
+	}
+
+	div#form {
+		position: fixed;
+		background: beige;
+	}
+
+	@media (max-width: 700px) {
+		div#form {
+			width: calc(100vw - 80px);
+			height: 100vh;
+			margin: 0;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			padding: 40px;
+		}
+	}
+
+	@media (min-width: 700px) {
+		div#form {
+			border: 4px solid black;
+			border-radius: 15px;
+			box-shadow: 12px 12px black;
+			width: 500px;
+			height: 420px;
+			top: 50%;
+			left: 50%;
+			padding: 30px;
+			margin-top: -220.5px;
+			margin-left: -260.5px;
+		}
+	}
+
+	label {
+		display: block;
+		padding: 3px;
+		margin-top: 12px;
+		font-weight: bold;
+	}
+
+	input,
+	select {
+		padding: 12px;
+		border: 2px solid black;
+		width: 100%;
+		font-size: 15px;
+		border-radius: 5px;
+
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+
+	button {
+		width: 100%;
+		margin-top: 20px;
+		background: blue;
+		font-weight: bold;
+		color: white;
+		font-size: 15px;
+		border: 2px solid blue;
+		border-radius: 5px;
+		padding: 6px;
+	}
+
+	.hidden {
+		display: none
+	}
+</style>
+
+<body>
+	<nav>
+		<a href="/" style="float:left" class="primary">
+			<h1>// LiftKit</h1>
+		</a>
+		<a href="javascript:document.querySelector('#form').classList.toggle('hidden')" style="float:right">
+			<h1>Signup for early access</h1>
+		</a>
+	</nav>
+	<main class="initial">
+		<h2 style="margin-bottom: 0px;">LiftKit makes lifting social 💪</h2>
+		<p style="font-family: 'Poppins';text-align:left">Coming February 1st, 2023. Signup early for progress updates and early access in January!</p>
+		<a class="button primary" href="#features">Features</a>
+		<a class="button secondary" href="javascript:document.querySelector('#form').classList.toggle('hidden')">Signup now for early access in January</a>
+	</main>
+	<main class="second" id="features">
+		<h2 style="margin-bottom: 6px">LiftKit Features 👏</h2>
+		<ul style="float: left; list-style: disc;text-align: left;font-weight: bold;font-family: 'Poppins';margin: 0">
+			<li>split and schedule tracking</li>
+			<li>weight and rep/set count tracking</li>
+			<li>personal record progress tracking for weight, reps, and set counts</li>
+			<li>daily, weekly, and monthly competitions with friends</li>
+			<li>digital trophy case</li>
+			<li>LiftToday: take a daily photo to keep and share physical progress</li>
+			<li>and sooo much more too</li>
+		</ul>
+		<br>
+		<a class="button primary" href="#screenshots" style="text-align: center">Screenshots</a>
+		<a class="button tertiary" href="javascript:document.querySelector('#form').classList.toggle('hidden')" style="text-align: center">Signup now for early access in January</a>
+	</main>
+	<main class="third" id="screenshots">
+		<h2 style="margin-bottom: 6px">LiftKit Screenshots 📱</h2>
+		<img src="/screenshots.png" style="width: calc(90vw);height:calc(90vw / 3);margin:0 auto">
+		<br>
+		<a class="button primary" href="javascript:document.querySelector('#form').classList.toggle('hidden')" style="text-align: center">Signup now for early access in January</a>
+	</main>
+	<main class="footer">
+		<h2 style="margin-bottom:0">LiftKit</h2>
+		<p style="text-align: left; font-family: 'Poppins';font-weight: bold;margin:6px 0;">Changing the way people lift together</p>
+		<ul style="float: left; list-style: none;text-align: left;">
+			<li><a href="https://hr.liftkit.app">2022 Health Rewind</a></li>
+			<br>
+			<li><a href="/about">About us</a></li>
+			<li><a href="/#features">LiftKit features</a></li>
+			<br>
+			<li><a href="https://twitter.com/liftkit">Twitter</a> <a href="https://instagram.com/liftkitapp">Instagram</a> <a href="https://github.com/liftkitapp">GitHub</a></li>
+		</ul>
+		<ul style="float: right; list-style: none;text-align: right;">
+			<li><a href="mailto:support@liftkit.app">Email us</a></li>
+			<br>
+			<li><a href="/legal/terms.txt">Terms of service</a></li>
+			<li><a href="/legal/privacy.txt">Privacy policy</a></li>
+			<br>
+			<li>&copy; LiftKit 2022</li>
+		</ul>
+	</main>
+	<div id="form" class="hidden">
+		<h2 style="margin:0;margin-bottom:15px;display:inline">LiftKit Early Access</h2>
+		<h2 style="margin:0;margin-right:6px;float:right"><a href="javascript:document.querySelector('#form').classList.toggle('hidden')" style="color:black">&times;</a></h2>
+		<br>
+		<form method="POST" action="https://forms.reform.app/headless/gM9Aer/early-access/JsHF33/submissions">
+			<div>
+				<label for="2a125874-e0fc-4d58-8497-e9e6289daa3f">What's your first name?</label>
+				<input type="text" id="2a125874-e0fc-4d58-8497-e9e6289daa3f" name="answers[2a125874-e0fc-4d58-8497-e9e6289daa3f]" placeholder="Noel" required />
+			</div>
+			<div>
+				<label for="71c27da6-662d-4455-ae3d-f58d77391f17">What's your phone number?</label>
+				<input type="tel" id="71c27da6-662d-4455-ae3d-f58d77391f17" name="answers[71c27da6-662d-4455-ae3d-f58d77391f17]" placeholder="1 (123) 456-7890" required />
+			</div>
+			<div>
+				<label for="82d434cd-ade6-4322-94ba-83fdb34cab6b">What are you most excited for?</label>
+				<select id="82d434cd-ade6-4322-94ba-83fdb34cab6b" name="answers[82d434cd-ade6-4322-94ba-83fdb34cab6b]">
+					<option value="">Select an option</option>
+					<option value="Split and schedule tracking">Split and schedule tracking</option>
+					<option value="Competitions with friends">Competitions with friends</option>
+					<option value="Personal record tracking">Personal record tracking</option>
+					<option value="Digital trophy case">Digital trophy case</option>
+					<option value="LiftToday">LiftToday</option>
+				</select>
+			</div>
+			<div>
+				<label for="98109f8f-f1df-43d8-860b-a560049441da">What feature should we add?</label>
+				<input type="text" id="98109f8f-f1df-43d8-860b-a560049441da" name="answers[98109f8f-f1df-43d8-860b-a560049441da]" />
+			</div>
+			<button type="submit">Join the early access list</button>
+		</form>
+	</div>
+</body>
