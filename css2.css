@@ -1,0 +1,6 @@
+
+	body * {
+		display: block;
+		border: 3px solid black;
+		margin: 5px;
+	}
